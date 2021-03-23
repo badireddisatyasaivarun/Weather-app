@@ -3,7 +3,7 @@ const path = require('path');
 const hbs = require('hbs');
 const location_data = require("./Utils/w-address");
 const get_data = require("./Utils/w-data");
-
+const port = process.env.PORT||3000;
 //decare express application;
 const app = express();
 
@@ -143,6 +143,6 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log('server started');
+app.listen(port,()=>{
+    console.log('server started in '+port);
 })
