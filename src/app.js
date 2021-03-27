@@ -113,7 +113,7 @@ app.get('/weather',(req,res)=>{
 
 
          res.send({
-             forecast: "The tempearture is recorded at "+response.body.current.observation_time+". It has measured, "+response.body.current.temperature+" Degree Celcius Out, And has wind to be "+response.body.current.weather_descriptions[0]+" with a speed of "+response.body.current.wind_speed+" Km/ph.",
+             forecast: "The tempearture is recorded at "+response.body.current.observation_time+". It has measured, "+response.body.current.temperature+" Degree Celcius Out, And has wind to be of "+response.body.current.weather_descriptions[0]+" with a speed of "+response.body.current.wind_speed+" Km/ph. and the humidity is "+response.body.current.humidity+"% period.",
              location: response.body.location.region+", "+response.body.location.country,
              address: req.query.address,
             });
