@@ -44,7 +44,7 @@ app.get('/help',(req,res)=>{
         title: 'Help',
         name: 'Badireddi Satya Sai Varun',
         text: 'This is a Help Page',
-        contact: 'For any queries, mail me at satysaivarun232@gmail.com'
+        contact: 'For any queries, mail me at satyasaivarun232@gmail.com'
     });
 })
 
